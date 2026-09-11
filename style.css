@@ -1,0 +1,356 @@
+/* Configuración general */
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+p {
+  text-align: justify;       
+  line-height: 1.6;          
+  margin-bottom: 16px;       
+  color: #374151;            
+  font-size: 1rem;           
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f5f7fa;
+    color: #333;
+}
+
+
+/* Menú */
+
+header {
+    background-color: #1f2937;
+    padding: 20px;
+}
+
+nav {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h1 {
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Secciones */
+
+section {
+    max-width: 1100px;
+    margin: auto;
+    padding: 60px 20px;
+}
+
+section h2 {
+    margin-bottom: 20px;
+    font-size: 32px;
+}
+
+
+/* Inicio */
+
+#inicio {
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+}
+
+.inicio-contenido {
+    max-width: 1100px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.inicio-texto {
+    flex: 1;
+}
+
+.saludo {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.inicio-texto h2 {
+    font-size: 45px;
+    line-height: 1.2;
+    margin-bottom: 25px;
+}
+
+.inicio-texto > p:not(.saludo) {
+    max-width: 600px;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+
+/* Botón */
+
+.boton {
+    display: inline-block;
+    background-color: #1f2937;
+    color: white;
+    padding: 13px 28px;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.boton:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
+
+/* Fotografía */
+
+.inicio-foto {
+    flex: 0 0 330px;
+}
+
+.inicio-foto img {
+    width: 330px;
+    height: 330px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 8px solid white;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Habilidades */
+
+.habilidades-lista {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.habilidades-lista span {
+    background-color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    /* Transición suave para entrada y salida */
+    transition: all 0.2s ease;
+    cursor: default;
+}
+
+.habilidades-lista span:hover {
+    transform: translateY(-3px);
+    background-color: #1f2937;
+    color: white;
+}
+
+/* Proyectos */
+.proyectos-contenedor {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 25px;
+}
+
+.proyecto {
+background-color: #ffffff;
+padding: 20px;
+border-radius: 12px;
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+overflow: hidden;
+display: flex;
+flex-direction: column;
+}
+
+.proyecto:hover {
+transform: translateY(-6px);
+box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+}
+
+/* Imágenes de los proyectos */
+/* Contenedor e imagen */
+.proyecto-imagen {
+  width: 100%;
+  height: 200px;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #f3f4f6;
+}
+
+.proyecto-imagen img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Hace que la imagen llene el espacio sin deformarse */
+  transition: transform 0.3s ease;
+}
+
+.proyecto:hover .proyecto-imagen img {
+  transform: scale(1.04);
+}
+
+/* Número del proyecto */
+
+.proyecto-numero {
+display: block;
+font-size: 14px;
+color: #6b7280;
+margin-bottom: 5px;
+}
+
+/* Título del proyecto */
+
+.proyecto h3 {
+font-size: 24px;
+margin-bottom: 5px;
+}
+
+/* Tipo de proyecto */
+
+.proyecto-tipo {
+font-size: 14px;
+color: #6b7280;
+margin-bottom: 15px;
+}
+
+/* Texto del proyecto */
+
+.proyecto p {
+margin-bottom: 15px;
+}
+
+/* Imágenes de los proyectos */
+.proyecto img {
+width: 100%;
+height: 180px;
+object-fit: contain;
+display: block;
+margin-bottom: 20px;
+border-radius: 8px;
+background-color: #f5f7fa;
+border: 1px solid #e5e7eb;
+}
+
+/* Número del proyecto */
+.proyecto-numero {
+display: block;
+font-size: 14px;
+color: #6b7280;
+margin-bottom: 5px;
+}
+
+/* Título del proyecto */
+.proyecto h3 {
+font-size: 24px;
+margin-bottom: 5px;
+}
+
+/* Tipo de proyecto */
+.proyecto-tipo {
+font-size: 14px;
+color: #6b7280;
+margin-bottom: 15px;
+}
+
+/* Texto del proyecto */
+.proyecto p {
+margin-bottom: 15px;
+}
+/* Badges para tecnologías (requiere envolver cada tecnología en un <span> en HTML) */
+.tecnologias-container span {
+  display: inline-block;
+  background-color: #eef2ff;
+  color: #4f46e5;
+  font-size: 0.82rem;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 20px;
+  margin-right: 6px;
+  margin-top: 6px;
+}
+/* Footer */
+
+footer {
+    background-color: #1f2937;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+
+/* Adaptación para celulares */
+
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #inicio {
+        padding: 60px 20px;
+    }
+
+    .inicio-contenido {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .inicio-foto {
+        flex: none;
+    }
+
+    .inicio-foto img {
+        width: 240px;
+        height: 240px;
+    }
+
+    .inicio-texto h2 {
+        font-size: 32px;
+    }
+
+    .inicio-texto > p:not(.saludo) {
+        font-size: 16px;
+    }
+
+    
+    .proyectos-contenedor {
+    grid-template-columns: 1fr;
+    }
+
+    .proyecto img {
+    height: 200px;
+    }
+
+
+    }
