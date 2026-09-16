@@ -1,6 +1,6 @@
 # Portafolio Web – Maritza Oyarzo
 
-Portafolio web personal desarrollado durante mi formación en **Desarrollo Full Stack Java**.
+Portafolio web personal desarrollado durante mi formación en **Desarrollo Aplicaciones Full Stack Java**.
 
 Este proyecto reúne algunos de los trabajos académicos que he desarrollado durante mi proceso de aprendizaje, aplicando conocimientos de programación, desarrollo web, bases de datos y tecnologías backend y frontend.
 
